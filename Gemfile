@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'telegram-bot-ruby'
+gem 'pry'
+gem 'pg'
+gem 'activesupport'
+gem 'activerecord'
+gem 'actionpack'
+gem 'rake'
+gem 'i18n'
