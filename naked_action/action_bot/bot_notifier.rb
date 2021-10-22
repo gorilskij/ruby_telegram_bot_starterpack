@@ -23,7 +23,7 @@ module ActionBot
       end
     end
 
-    def notify_chat(chat_id, text, mode)
+    def self.notify_chat(chat_id, text, mode)
       BotNotifier.config.bot.api.send_message(chat_id: chat_id, text: text, parse_mode: mode)
     rescue Telegram::Bot::Exceptions::ResponseError => e
       if e.instance_variable_get("@data")["description"] == "Forbidden: the group chat was deleted"
