@@ -178,5 +178,6 @@ class Notifier
   rescue Telegram::Bot::Exceptions::ResponseError => e
     if e.instance_variable_get("@data")["description"] == "Forbidden: the group chat was deleted"
       Chat.find_by(tg_chat_id: chat_id).destroy!
+    end
   end
 end
