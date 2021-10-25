@@ -1,5 +1,3 @@
-require 'pry'
-
 class ChatsController < BotsController
   def index
   end
