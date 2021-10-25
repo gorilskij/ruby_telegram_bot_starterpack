@@ -77,3 +77,43 @@ en:
   confirm_unsubscription: Thanks for unsubscribtion, you thankless wights
   no_such_locale: "This language is not yet available. Please, send a feature request to the creator of this bot: @bars_eek. Available locales are: %{param}"
   locale_changed: Ok, now I will speak language %{param}
+
+nl:
+  already_setup: Ik ben already opgeset
+  started:
+    - Welkom naar NEDERLAND, je moet je binnen 2 weken na aankomst inschrijven bij de gemeente
+    - U kunt / klikken (flikken haha) om de commando's te zien
+  scan:
+    - Wat, waarom hat u me opgewaken? Kanker, godverdomme!
+    - Gefeliciteerd! Je bent een flikker, %{param}!
+  scan_already_done:
+    - Ik kalkuleere de GAY
+    - Chill broeder, neem een spliff. %{param} is een flikker nog een tijdje.
+  time_left: "%{hours}:%{minutes} tot de volgende pride"
+  nobody_to_scan: Niemand is geregistreerd, jullie zijn allemaal flikkertjes!
+  last_scan:
+    - Kalkuleert...
+    - Momenteel is %{param} de burgemeester van gaytown
+  no_last_scan: Nobody))0)
+  results: Waarom slaap je niet? Ga je inschrijven bij de gemeente 
+  register:
+    - Je staat ingeschreven bij de gemeente... 
+    - Je bent nu officieel woonachtig in Maastricht, %{param}
+  already_registered: De gemeente heeft uw gegevens al, %{param}!
+  not_started: Je moet eerst "/start" schrijven, stoned domkop
+  not_registered: Nog geen Belg-eehm flikkertjes!
+  last_pidors: "Zedendelinquent register:"
+  yoloxd:
+    - Glorie aan de koning...
+    - Je homokaart is ingetrokken, genie.
+  reminder:
+    - Alle burgers opgelet, gratis homotests zijn nu beschikbaar voor iedereen met symptomen!
+  confirm_subscription:
+    - Verdomme, ik heb net lsd genomen, oké, laten we dit snel doen
+    - Wil je een tab?
+    - K, ik zal het je vertellen als ik nuchter genoeg ben om weer te werken 
+  already_subscribed: Ik struikel ballen bro, laat me met rust!
+  no_subscription: You aren't yet subscribed to a reminder!
+  confirm_unsubscription: Thanks for unsubscribtion, you thankless wights
+  no_such_locale: "Waarom wissel je van taal? Ben je een verrader? Je mag maar een van de volgende dingen zeggen: %{param}, anders, ga zeuren naar @bars_eek."
+  locale_changed: Nederland neemt afscheid van je, pas op dat je niet "per ongeluk" wat MDMA in je schoenen vergeet, de %{param} autoriteiten zullen niet amuseren. 
