@@ -20,6 +20,11 @@ class CronBot
   def call
     TelegramBot.run do |bot|
       @bot = bot
+      Chat.all.each do |chat|
+        unless bot.api.get_chat(chat_id: chat.tg_chat_id)['result']['permissions']['can_send_messages']
+          Chat.find_by(tg_chat_id: chat.tg_chat_id).destroy!
+        end
+      end
       notify_reminder(subscribed_to_reminder_chat_ids)
     end
   end
