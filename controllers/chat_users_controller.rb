@@ -5,7 +5,10 @@ class ChatUsersController < BotsController
   def index
     load_chat
     return notify(params[:tg_chat_id], t('not_started')) unless !!@chat
+
     load_chat_users
+    return notify(@chat.tg_chat_id, t('not_registered')) unless @chat_users.count.positive?
+    
     notify(@chat.tg_chat_id, statistics_text, 'HTML')
   end
 
@@ -126,7 +129,6 @@ class ChatUsersController < BotsController
   end
 
   def statistics_text
-    return notify(@chat.tg_chat_id, t('not_registered')) unless @chat_users.count.positive?
     notify(@chat.tg_chat_id, t('results'))
 
     text = "<pre>#{t('last_pidors')}\n\n"
