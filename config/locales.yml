@@ -35,3 +35,45 @@ ru:
   already_subscribed: Вы уже подписаны на напоминание!
   no_subscription: Вы не подписаны на напоминание!
   confirm_unsubscription: Спасибо за отписку, неблагодарные
+  no_such_locale: "Этот язык еще не установлен. Пожалуйста, отправьте запрос на создание этого языка создателю: @bars_eek. Доступные языки: %{param}"
+  locale_changed: Хорошо, теперь я буду говорить на языке %{param}
+
+en:
+  already_setup: I am already setup
+  started:
+    - Now we're talking
+    - Enter / to see all commands
+  scan:
+    - So... Why'd you wake me up? FYI, there is a teenager chinese rolling dice in this channel. Shame on you.
+    - You're faggot, %{param}!
+  scan_already_done:
+    - Chinese teenager wakes up... checks the data...
+    - Scan has already been done today, no need to hurry! %{param} is still a faggot. Chinese teenager goes back to sleep.
+  time_left: "%{hours} hours and %{minutes} minutes left"
+  nobody_to_scan: Nobody is registered, so everybody is a faggot!
+  last_scan:
+    - One sec, checking the data
+    - Last faggot is %{param}
+  no_last_scan: Nobody))0)
+  results: Why aren't you asleep, don't you have anything better to do? You don't, do you? Poor little thing...
+  register:
+    - One sec, opening an excel file
+    - You're now registered, %{param}
+  already_registered: You've already been registered, %{param}!
+  not_started: Need to write /start first
+  not_registered: No faggots yet!
+  last_pidors: "Last faggots:"
+  yoloxd:
+    - You guessed it, little fuck...
+    - Твои очки анулированы, гений. Your points are nullified, genius.
+  reminder:
+    - Attention! The scan is available!
+  confirm_subscription:
+    - Great, more work
+    - Why can't you keep track of time yourself, lazy bastards
+    - Aight, I will remind you next time the scan is available
+  already_subscribed: You are already subscribed to a reminder!
+  no_subscription: You aren't yet subscribed to a reminder!
+  confirm_unsubscription: Thanks for unsubscribtion, you thankless wights
+  no_such_locale: "This language is not yet available. Please, send a feature request to the creator of this bot: @bars_eek. Available locales are: %{param}"
+  locale_changed: Ok, now I will speak language %{param}

@@ -15,6 +15,10 @@ class Bot < ActionBot::Base
     end
   end
 
+  def message_change_locale?
+    @message&.text =~ /\A\/changeLocale(#{bot_name})? [A-Za-z]{2}\z/
+  end
+
   def message_pashal?
     @message&.text =~ /\A\/#{PASHALKA_COMMAND}(#{bot_name})?\z/
   end
@@ -93,6 +97,11 @@ class Bot < ActionBot::Base
       on message_unsubscribe?, subscriptions: :destroy, params: {
         tg_chat_id: tg_chat_id,
         name: "Reminder"
+      }
+
+      on message_change_locale?, settings: :change_locale, params: {
+        tg_chat_id: tg_chat_id,
+        locale: @message.text.split.last
       }
     end
   end
