@@ -21,7 +21,7 @@ AppConfigurator.configure do |config|
 
   # Configure pashalka
   config.pashalka = begin
-    YAML::LOAD(IO.read('config/pashalka.yml'))["pashalka"]
+    YAML::load(IO.read('config/pashalka.yml'))["pashalka"]
   rescue Errno::ENOENT
     ENV["PASHALKA"]
   end

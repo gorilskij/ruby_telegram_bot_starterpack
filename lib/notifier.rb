@@ -174,6 +174,10 @@ class Notifier
   end
 
   def notify_user(text:, mode: nil, string_arg: nil, chat_id:)
+    unless bot.api.get_chat(chat_id: chat_id)['result']['permissions']['can_send_messages']
+      Chat.find_by(tg_chat_id: chat_id).destroy!
+      return
+    end
     bot.api.send_message(chat_id: chat_id, text: format(text, *string_arg), parse_mode: mode)
   rescue Telegram::Bot::Exceptions::ResponseError => e
     error_data = e.instance_variable_get("@data")
