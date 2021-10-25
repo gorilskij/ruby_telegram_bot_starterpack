@@ -107,6 +107,6 @@ class Bot < ActionBot::Base
   end
 
   def message_legal?
-    @message.respond_to?(:text)
+    @message.respond_to?(:text) && @message.text
   end
 end
