@@ -81,7 +81,7 @@ en:
 nl:
   already_setup: Ik ben already opgeset
   started:
-    - Welkom naar NEDERLAND, je moet je binnen 2 weken na aankomst inschrijven bij de gemeente
+    - Welkom naar NEDERLAND, je hebt zeker geluk dat je hier geboren bent
     - U kunt / klikken (flikken haha) om de commando's te zien
   scan:
     - Wat, waarom hat u me opgewaken? Kanker, godverdomme!
@@ -94,8 +94,8 @@ nl:
   last_scan:
     - Kalkuleert...
     - Momenteel is %{param} de burgemeester van gaytown
-  no_last_scan: Nobody))0)
-  results: Waarom slaap je niet? Ga je inschrijven bij de gemeente 
+  no_last_scan: Wat is dit? Niemand homo? Dat is onmogelijk, hoe zit het met tolerantie?
+  results: Waarom slaap je niet? Ga je inschrijven bij de gemeente
   register:
     - Je staat ingeschreven bij de gemeente... 
     - Je bent nu officieel woonachtig in Maastricht, %{param}
@@ -116,4 +116,4 @@ nl:
   no_subscription: You aren't yet subscribed to a reminder!
   confirm_unsubscription: Thanks for unsubscribtion, you thankless wights
   no_such_locale: "Waarom wissel je van taal? Ben je een verrader? Je mag maar een van de volgende dingen zeggen: %{param}, anders, ga zeuren naar @bars_eek."
-  locale_changed: Nederland neemt afscheid van je, pas op dat je niet "per ongeluk" wat MDMA in je schoenen vergeet, de %{param} autoriteiten zullen niet amuseren. 
+  locale_changed: Welkom naar NEDERLAND, hier is wat MDMA, vergeet niet dat je moet je binnen 2 weken na aankomst inschrijven bij de gemeente.
