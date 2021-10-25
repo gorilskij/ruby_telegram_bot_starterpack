@@ -176,7 +176,8 @@ class Notifier
   def notify_user(text:, mode: nil, string_arg: nil, chat_id:)
     bot.api.send_message(chat_id: chat_id, text: format(text, *string_arg), parse_mode: mode)
   rescue Telegram::Bot::Exceptions::ResponseError => e
-    if e.instance_variable_get("@data")["description"] == "Forbidden: the group chat was deleted"
+    error_data = e.instance_variable_get("@data")
+    if error_data && error_data["description"] == "Forbidden: the group chat was deleted"
       Chat.find_by(tg_chat_id: chat_id).destroy!
     end
   end
