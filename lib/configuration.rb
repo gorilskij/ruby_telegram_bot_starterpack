@@ -29,5 +29,5 @@ AppConfigurator.configure do |config|
   # Configure i18n
   config.i18n_locale = :ru
   config.i18n_load_path = Dir['config/locales.yml']
-  config.i18n_available_locales = %i[ru en]
+  config.i18n_available_locales = %i[ru en nl]
 end
